@@ -1,0 +1,43 @@
+.contain {
+  background-color: #603e20d2;
+  display: flex;
+  justify-content: end;
+  padding-inline: 3rem;
+}
+.options {
+  display: flex;
+  gap: 15px;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.mobile {
+  display: none;
+}
+.optionsNone {
+  display: none;
+}
+
+@media only screen and (max-width: 730px) {
+  .mobile {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .mobile svg {
+    padding: 1rem;
+  }
+
+  .contain {
+    flex-direction: column;
+    padding-inline: 0rem;
+  }
+  .options {
+    flex-direction: column;
+  }
+}

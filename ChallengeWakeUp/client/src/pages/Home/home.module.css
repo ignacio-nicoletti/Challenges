@@ -1,0 +1,151 @@
+.containHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAdd {
+  display: flex;
+  background-color: #9ec5ca;
+  justify-content: center;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 15px;
+}
+.buttonAdd p {
+  padding: 0;
+  margin: 0;
+}
+
+.containCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.divButtonDelete {
+  display: flex;
+  justify-content: end;
+}
+.divButtonDelete svg {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #9ec5ca;
+  width: 300px;
+  border-radius: 10px;
+  border: #9ec5ca 8px solid;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card button {
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: #2a1d04;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.containModal {
+  position: fixed; /* Fija el modal en una posición absoluta en la ventana del navegador */
+  top: 0;
+  left: 0;
+  width: 100%; /* Opcional: puedes ajustar el ancho según sea necesario */
+  height: 100%; /* Opcional: puedes ajustar la altura según sea necesario */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para el efecto de superposición */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.modalContent {
+  background-color: #9ec5ca;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.cancelModal {
+  display: flex;
+  justify-content: end;
+}
+.cancelModal svg {
+  cursor: pointer;
+}
+
+.containAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.containAddInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.containAddInput input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.containAdd button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 730px) {
+  .buttonAdd {
+    width: 90%;
+  }
+  .buttonAdd p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .modalContent {
+    width: 90%;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 1rem;
+  }
+}

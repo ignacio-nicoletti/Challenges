@@ -1,0 +1,144 @@
+.cardContain {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.subCardContain {
+  background-color: #9ec5ca;
+  width: 30%;
+  border-radius: 10px;
+}
+.subCardContain p {
+  font-size: 1.2rem;
+}
+
+.menuContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 3rem;
+}
+
+.menuCardContain {
+  background-color: #9ec5ca;
+  border-radius: 10px;
+  padding-inline: 3rem;
+  width: 50%;
+}
+.menuTitle {
+  font-size: 2rem;
+}
+
+.Menucard {
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  width: 100%;
+  align-items: center;
+}
+
+.Menucard:last-child {
+  border-bottom: none;
+}
+.BoxP {
+  width: 50%;
+}
+
+.BoxP svg {
+  cursor: pointer;
+}
+
+.buttonAdd {
+  background-color: #9ec5ca;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 20%;
+}
+
+/* MODAL */
+.containModal {
+  position: fixed; /* Fija el modal en una posición absoluta en la ventana del navegador */
+  top: 0;
+  left: 0;
+  width: 100%; /* Opcional: puedes ajustar el ancho según sea necesario */
+  height: 100%; /* Opcional: puedes ajustar la altura según sea necesario */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para el efecto de superposición */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.modalContent {
+  background-color: #9ec5ca;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.cancelModal {
+  display: flex;
+  justify-content: end;
+}
+.cancelModal svg {
+  cursor: pointer;
+}
+
+.containAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.containAddInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.containAddInput input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.containAdd button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+/* MODAL */
+
+@media only screen and (max-width: 730px) {
+  .subCardContain {
+    width: 90%;
+  }
+  .menuCardContain {
+    width: 80%;
+    padding-inline: 1rem;
+  }
+
+  .Menucard {
+    width: 100%;
+  }
+  .buttonAdd {
+    width: 90%;
+  }
+  .modalContent {
+    width: 90%;
+  }
+}

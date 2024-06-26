@@ -1,0 +1,31 @@
+.contain {
+  background-color: orange;
+  width: 100%;
+  color: white;
+  position:fixed ;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 0.5rem;
+}
+.contain img {
+  width: 50px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+@media only screen and (max-width: 770px) {
+  .contain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contain img {
+    width: 40px;
+  }
+  .social {
+    display: flex;
+    gap: 10px;
+  }
+}

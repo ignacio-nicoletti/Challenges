@@ -1,0 +1,44 @@
+.contain {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.favourite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.favourite svg:hover {
+  cursor: pointer;
+}
+
+
+.contain img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  top: 240px;
+  left: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.719));
+}
+
+.title p {
+  padding-left: 1rem;
+  display: flex;
+  width: 100%;
+}

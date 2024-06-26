@@ -1,0 +1,83 @@
+.containNoDark {
+  background-color: white;
+  height: 100%;
+}
+.containDark {
+  background-image: url("../../assets/fondo.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.cardContain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.advice {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.advice p {
+  font-size: 2rem;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 770px) {
+  .cardContain {
+   
+    padding-bottom: 10rem
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+    padding-inline: 1rem;
+    height: 65vh;
+  }
+  .loading img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .Footer {
+    width: 100%;
+    position: fixed;
+    margin-block: 0.5rem;
+  }
+  .containNoDark,
+  .containDark {
+    overflow-x: hidden;
+  }
+  .advice {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+}
